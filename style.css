@@ -26,6 +26,9 @@ header a:hover{
     color: pink;
     transition: 0.3s ease-in-out;
 }
+main{
+    flex-wrap: wrap;
+}
 .principal .main_image{
     border-radius: 22px;
 }
