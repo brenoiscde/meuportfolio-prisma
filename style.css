@@ -151,7 +151,10 @@ main .skills {
     align-items: center;
     margin: 10px 20px 100px  ;
     max-width: 50%;
-
+    transition: transform 0.3s ease;
+}
+.container_works .trabalho:hover{
+    transform: scale(1.02);
 }
 .container_works p{
     margin: 10px 0px 30px;
@@ -185,7 +188,7 @@ main .skills {
     display: flex;
     font-size: 18px;
     padding: 4px 20px;
-     
+    margin-left:0px ;
 }
 .trabalho .text a{
     display: flex;
@@ -193,11 +196,12 @@ main .skills {
     border: 1px solid black;
     padding: 5px 0;
     border-radius: 22px;
-    transition: transform 0.3s ease
 }
 .trabalho .text a:hover{
-    transform:translateY(-5px);
+    color: rgb(255, 255, 255);
+    background-color: #00000010;
 }
+
 .lista-jobs{
     display: flex;
 }
