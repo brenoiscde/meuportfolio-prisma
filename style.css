@@ -8,8 +8,8 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(209,201,201);
+    background: radial-gradient(circle, rgba(209,201,201,1) 0%, rgba(0,0,0,1) 100%);
 }
 header{
     display: flex;
@@ -20,10 +20,10 @@ header{
 header a{
     text-decoration: none;
     font-size: 22px;
-    color: #000000;
+    color: #ffffff;
 }
 header a:hover{
-    color: pink;
+    color: rgb(255, 229, 127);
     transition: 0.3s ease-in-out;
 }
 main{
@@ -37,21 +37,27 @@ main{
     align-items: center;
     gap: 5px;
     margin-top: 10px;
+    color: rgb(255, 229, 127);
+}
+.p3{
+    color:white;
 }
 .principal{
     display: flex;
     justify-content: center;
 }
 main h1 span{
-    color:aquamarine;
+    color:rgb(255, 229, 127);
 }
 .display_container h1{
     font-size: 40px;
+    color: white;
 }
 .display_container .p1{
     font-size: 16px;
     font-weight: 400;
     margin-top: 15px;
+    color: #ffffff;
 }
 .display_container .p2,.p3{
     font-size: 20px;
@@ -77,12 +83,13 @@ main .aboutme{
 }
 .aboutme span{
     font-size: 24px;
-    background-color: pink;
+    background-color: rgb(255, 229, 127);
     border-radius: 25px;
     padding: 7px 22px;
     max-width:fit-content;
 }
 .aboutme p{
+    color: white;
     font-size: 18px;
     margin-top: 40px;
     max-width: 50%;
@@ -103,7 +110,7 @@ main .skills {
 }
 .skills span{
     font-size: 24px;
-    background-color: pink;
+    background-color: rgb(255, 229, 127);
     border-radius: 25px;
     padding: 7px 22px;
     max-width:fit-content;
@@ -141,7 +148,7 @@ main .skills {
 }
 .container_works span{
     font-size: 24px;
-    background-color: pink;
+    background-color: rgb(255, 229, 127);
     border-radius: 25px;
     padding: 7px 22px;
     max-width:fit-content;
@@ -201,7 +208,7 @@ main .skills {
     border-radius: 22px;
 }
 .trabalho .text a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 229, 127);
     background-color: #00000010;
 }
 
@@ -225,7 +232,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: pink;
+    background-color: rgb(132, 125, 126);
     flex-direction: column;
 }
 footer p{
@@ -233,12 +240,13 @@ footer p{
     top: 30px;
 }
 footer h3{
+    display: flex;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     max-width: 30%;
-    text-align: start;
     margin: 35px 0 10px;
-    color: #4b5563;
+    color: white;
+    align-items: center;
 }
 footer a{
     margin-top: 20px;
@@ -251,10 +259,12 @@ footer a{
     gap: 15px;
     margin: 20px;
 }
+
 footer h4{
+    color: rgb(255, 229, 127);
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 127, 146);
+    background-color: rgb(34, 33, 33);
     width: 100%;
     padding: 30px;
 }
