@@ -45,6 +45,25 @@ main{
 .principal{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+@media(max-width:425px){
+    .principal{
+        position: relative;
+        left: 80px;
+    }
+   .aboutme{
+    position: relative;
+    left: 80px;
+   }
+   .skills{
+    position: relative;
+    left: 80px;
+   }
+   .habilidade{
+    width: 20p;
+    flex-wrap: wrap;
+   }
 }
 main h1 span{
     color:rgb(255, 229, 127);
@@ -72,7 +91,7 @@ main h1 span{
     margin: 50px 0 ;
 }
 .redes_sociais {
-    display: flex;
+    display: flex;  
     gap: 10px;
 }
 main .aboutme{
@@ -280,4 +299,12 @@ footer h4{
 }
 .email img{
     margin-top: 15px;
+}
+
+@media(min-width:425px){
+    header a{
+        align-items: center;
+        position: relative;
+        left: 80px;
+    }
 }
