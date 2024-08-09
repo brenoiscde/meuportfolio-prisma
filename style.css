@@ -10,11 +10,15 @@ body{
     font-weight: 500;
     background: rgb(209,201,201);
     background: radial-gradient(circle, rgba(209,201,201,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
     justify-content: center;
-    margin: 32px 0;
+    margin: 32px 0 50px 0;
     gap: 20px;
 }
 header a{
@@ -47,24 +51,7 @@ main{
     justify-content: center;
     flex-wrap: wrap;
 }
-@media(max-width:425px){
-    .principal{
-        position: relative;
-        left: 80px;
-    }
-   .aboutme{
-    position: relative;
-    left: 80px;
-   }
-   .skills{
-    position: relative;
-    left: 80px;
-   }
-   .habilidade{
-    width: 20p;
-    flex-wrap: wrap;
-   }
-}
+
 main h1 span{
     color:rgb(255, 229, 127);
 }
@@ -144,6 +131,10 @@ main .skills {
 .skills .container_skills img{
     width: 64px;
     height: 64px;
+    transition: transform 0.3s ease;
+}
+.skills .container_skills img:hover{
+    transform: scale(1.1);
 }
 .skills .container_skills span{
     font-size: 16px;
@@ -253,6 +244,7 @@ footer{
     align-items: center;
     background-color: rgb(132, 125, 126);
     flex-direction: column;
+    width: 100%;
 }
 footer p{
     position: relative;
@@ -301,10 +293,18 @@ footer h4{
     margin-top: 15px;
 }
 
-@media(min-width:425px){
+@media(max-width:375px){
     header a{
-        align-items: center;
-        position: relative;
-        left: 80px;
+        font-size: 16px;
+    }
+    header{
+        margin-left: 60px;
+    }
+    .container_skills .habilidade{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        margin-left: 70px;
     }
 }
