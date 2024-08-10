@@ -224,6 +224,8 @@ main .skills {
 
 .lista-jobs{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .container_imagem{
     background-color: pink;
